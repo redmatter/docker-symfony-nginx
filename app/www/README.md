@@ -1,4 +1,6 @@
 sample-project
 ==============
 
-A Symfony project created on June 17, 2016, 4:34 pm.
+Sample Symfony project.
+
+This is intended to be a skeleton which is forked and modified to implement your own application.
