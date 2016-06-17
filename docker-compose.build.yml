@@ -1,0 +1,15 @@
+version: '2'
+services:
+    build:
+        image: composer/composer:1.1-alpine
+        volumes:
+            - ./app/www:/app
+        command: install
+
+    test:
+        image: phpunit/phpunit
+        volumes:
+            - ./app/www:/app
+        # For some reason the entrypoint in the image adds a '--help' on the end, so we need to override it in order
+        # for it to just run the tests.
+        entrypoint: /usr/local/bin/phpunit

@@ -1,0 +1,5 @@
+*/.gitignore
+*/README.md
+*/phpunit.xml.dist
+*/composer.*
+*/tests
