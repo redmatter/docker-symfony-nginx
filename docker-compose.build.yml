@@ -4,7 +4,7 @@ services:
         image: composer/composer:1.1-alpine
         volumes:
             - ./app/www:/app
-        command: install
+        command: install --no-interaction
 
     test:
         image: phpunit/phpunit
