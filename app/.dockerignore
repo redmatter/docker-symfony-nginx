@@ -3,3 +3,7 @@
 */phpunit.xml.dist
 */composer.*
 */tests
+# This is intended to be a production-ready image, so app_dev.php and config.php aren't included.
+# When running in dev mode, these can be re-mounted back in.
+www/web/app_dev.php
+www/web/config.php
