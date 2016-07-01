@@ -3,8 +3,6 @@ services:
     app:
         image: redmatter/symfony-app
         build: ./app
-        ports:
-            - "9000"
         volumes:
             - ./app/www:/var/www/html
     web:
